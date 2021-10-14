@@ -1,0 +1,1 @@
+words = ["random", "words", "python", "code", "coding", "hangman"]
