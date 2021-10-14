@@ -1,13 +1,13 @@
 # Import generating random word
 import random
+from words import words
+
 
 # Input name message
 # Generates a welcome message with explanation of rules
 # Start game button is below list of rules
-
-def welcome_message():
-    player_name = input("Please enter your name:")
-    print("Welcome + player_name, read the rules below then hit the start button to begin")
+player_name = input("Please enter your name:")
+print("Welcome + player_name, read the rules below then hit the start button to begin")
 
 
 # Hangman area is generated - This is where an illustration of the hangman is built with every
