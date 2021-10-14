@@ -6,20 +6,20 @@ from words import words
 # Input name message
 # Generates a welcome message with explanation of rules
 # Start game button is below list of rules
-player_name = input("Please enter your name:")
-print("Welcome + player_name, read the rules below then hit the start button to begin")
+player_name = input("Please enter your name: ")
+print(f"Welcome  {player_name}, read the rules below then hit the start button to begin")
 
 
 
 
 # Computer generates random word from a list
 
-def get_random_word(random):
-    """This function generates the word that needs to be guessed """
+def get_valid_word(words):
+    word = random.choice(words)  # randomly chooses a word from the words.py
+    while '-' in word or ' ' in word:
+        word = random.choice(words)
 
-    word = random.choice(words)
-
-return word
+    return word.upper()
 
 
 def game():
