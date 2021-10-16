@@ -1,1 +1,1 @@
-words = ["random", "words", "python", "code", "coding", "hangman"]
+words_list = ["random", "words", "python", "code", "coding", "hangman"]
