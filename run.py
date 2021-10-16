@@ -36,6 +36,7 @@ def guess_input():
     """
     This function is for the player to input a letter in order to try and guess the word
     """
+
     while True:
         player_input = input("Guess A Letter: ")
         if player_input in alphabet:
@@ -52,5 +53,15 @@ def guess_input():
                     print("Wrong! That Letter Is Not In This Word")
                     tries = tries + 1
 
-        
+        else:
+            print("You Need To Input A Valid Character... A Letter")
+
+        if tries > 5:
+            gallows_pole_area(tries)
+            break
+        elif "_" in word_space:
+            gallows_pole_area(tries)
+        else:
+            gallows_pole_area(-1)
+            break
 
