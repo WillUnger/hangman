@@ -1,5 +1,5 @@
 import random
-from words import word_list
+from words import words_list
 
 alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 
             'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
@@ -18,10 +18,6 @@ guess_letters = []
 tries = 0     
 
 
-
-
-
-
 def gallows_pole_area(tries):
     if tries == 0:
         print("________      ")
@@ -30,7 +26,13 @@ def gallows_pole_area(tries):
         print("|             ")
         print("|             ")
         print("|             ")
-    
+    elif tries == 1:
+        print("________      ")
+        print("|      |      ")
+        print("|      0      ")
+        print("|             ")
+        print("|             ")
+        print("|             ")
 
 def guess_input():
     """
