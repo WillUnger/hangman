@@ -61,6 +61,14 @@ def gallows_pole_area(tries):
         print("|     /|\     ")
         print("|     /       ")
         print("|             ")
+    else:
+        print("________      ")
+        print("|      |      ")
+        print("|      0      ")
+        print("|     /|\     ")
+        print("|     / \     ")
+        print("|             ")
+        print("YOU'RE DEAD!")
 
 
 def guess_input():
