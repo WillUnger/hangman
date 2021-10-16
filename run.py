@@ -15,4 +15,15 @@ word_space = []
 for i in secret_word:
     word_space.append('_')
 guess_letters = []
-tries = 0       
+tries = 0     
+
+
+def gallows_pole_area(tries):
+    if tries == 0:
+        print("________      ")
+        print("|      |      ")
+        print("|             ")
+        print("|             ")
+        print("|             ")
+        print("|             ")
+    
