@@ -18,6 +18,10 @@ guess_letters = []
 tries = 0     
 
 
+
+
+
+
 def gallows_pole_area(tries):
     if tries == 0:
         print("________      ")
@@ -27,3 +31,14 @@ def gallows_pole_area(tries):
         print("|             ")
         print("|             ")
     
+
+def guess_input():
+
+    while True:
+        player_input = input("Guess A Letter: ")
+        if player_input in alphabet:
+            if player_input in guess_letters:
+                print("You Have Already Guessed That Letter, Try Again")
+           
+
+
