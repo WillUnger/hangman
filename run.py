@@ -75,6 +75,9 @@ def guess_input():
     """
     This function is for the player to input a letter in order to try and guess the word
     """
+    global secret_word
+    global word_space
+    global tries
 
     while True:
         player_input = input("Guess A Letter: ")
