@@ -73,7 +73,8 @@ def gallows_pole_area(tries):
 
 def guess_input():
     """
-    This function is for the player to input a letter in order to try and guess the word
+    This function is for the player to input a letter in 
+    order to try and guess the word
     """
     global secret_word
     global word_space
@@ -107,3 +108,10 @@ def guess_input():
             gallows_pole_area(-1)
             break
 
+        def main_game():
+            gallows_pole_area(tries)
+            guess_input()
+
+        if __name__ == "__main__":
+            main_game()
+            print("GAME OVER!")
