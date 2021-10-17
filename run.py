@@ -19,6 +19,9 @@ tries = 0
 
 
 def gallows_pole_area(tries):
+    """
+    This function builds the hangman animation with every wrong guess
+    """
     if tries == 0:
         print("________      ")
         print("|      |      ")
@@ -100,18 +103,12 @@ def guess_input():
             print("You Need To Input A Valid Character... A Letter")
 
         if tries > 5:
-            gallows_pole_area(tries)
+            gallows_pole_area(tries)  # breaks loop if all tries are used
             break
         elif "_" in word_space:
             gallows_pole_area(tries)
         else:
-            gallows_pole_area(-1)
+            gallows_pole_area(-1)  # breaks loop when game completes
             break
 
-        def main_game():
-            gallows_pole_area(tries)
-            guess_input()
-
-        if __name__ == "__main__":
-            main_game()
-            print("GAME OVER!")
+        
